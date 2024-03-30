@@ -27,6 +27,7 @@ export const GeneralContext = createContext<GeneralContextType>({});
 const GeneralProvider: React.FC = (props: PropsWithChildren) => {
     const [isEditing, setIsEditing] = useState(false);
     const [active, setActive] = useState(null);
+    const [open, setOpen] = useState(false);
     const [tasks, setTasks] = useState([
         {
             text: 'Training at the Gym',
@@ -119,6 +120,8 @@ const GeneralProvider: React.FC = (props: PropsWithChildren) => {
                 setNewTaskText,
                 editingTaskId,
                 setEditingTaskId,
+                open,
+                setOpen,
             }}
         >
             {props.children}

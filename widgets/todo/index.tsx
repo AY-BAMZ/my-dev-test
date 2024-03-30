@@ -8,7 +8,7 @@ import { ITask } from '@/lib/Schemas/task';
 import React from 'react';
 
 function TodoWidget() {
-    const { tasks, userData, setActive, setIsEditing } = useGeneralContext();
+    const { tasks, userData, setActive } = useGeneralContext();
 
     const handleSetActive = (item: ITask) => {
         setActive(item);

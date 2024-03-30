@@ -17,6 +17,7 @@ function TaskComponent({
     const handleSetActive = (data: ITask) => {
         setActive(data);
         setEditingTaskId(data.id);
+        setOpen(true);
     };
     return (
         <div

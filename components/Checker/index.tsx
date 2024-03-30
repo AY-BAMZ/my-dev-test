@@ -4,7 +4,7 @@ import CheckedIcon from '@/assets/icons/checked.svg';
 import UnCheckedIcon from '@/assets/icons/un_checked.svg';
 
 interface IChecked {
-    checked?: boolean;
+    checked: boolean;
     size?: number;
     setChecked: (checked: boolean) => void;
 }

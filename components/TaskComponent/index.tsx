@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Checker from '../Checker';
 import { cn } from '@/lib';
 import Button from '../Button';
@@ -12,7 +12,6 @@ function TaskComponent({
     data: ITask;
     onClick: () => void;
 }) {
-    const [checked, setChecked] = useState<boolean>(false);
     const { setEditingTaskId, setActive, handleToggleCompleted } =
         useGeneralContext();
     const handleSetActive = (data: ITask) => {

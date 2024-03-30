@@ -12,7 +12,7 @@ function TaskComponent({
     data: ITask;
     onClick: () => void;
 }) {
-    const { setEditingTaskId, setActive, handleToggleCompleted } =
+    const { setEditingTaskId, setActive, handleToggleCompleted, setOpen } =
         useGeneralContext();
     const handleSetActive = (data: ITask) => {
         setActive(data);

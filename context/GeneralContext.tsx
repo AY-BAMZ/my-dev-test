@@ -97,7 +97,6 @@ const GeneralProvider: React.FC = (props: PropsWithChildren) => {
     };
 
     const handleDeleteTask = (id: string) => {
-        console.log('id :>> ', id);
         const updatedTasks = tasks.filter((task) => task.id !== id);
         setTasks(updatedTasks);
     };
